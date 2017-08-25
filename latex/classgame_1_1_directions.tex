@@ -1,0 +1,63 @@
+\hypertarget{classgame_1_1_directions}{}\section{game.\+Directions Class Reference}
+\label{classgame_1_1_directions}\index{game.\+Directions@{game.\+Directions}}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgame_1_1_directions_a1fff6a8a68dbe00f087721d5baceae5c}\label{classgame_1_1_directions_a1fff6a8a68dbe00f087721d5baceae5c}} 
+string {\bfseries N\+O\+R\+TH} = \textquotesingle{}North\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classgame_1_1_directions_ae5858669bbb5df1decffc5607937a2fa}\label{classgame_1_1_directions_ae5858669bbb5df1decffc5607937a2fa}} 
+string {\bfseries S\+O\+U\+TH} = \textquotesingle{}South\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classgame_1_1_directions_ae57293958ef150fea46fcbf5b895972b}\label{classgame_1_1_directions_ae57293958ef150fea46fcbf5b895972b}} 
+string {\bfseries E\+A\+ST} = \textquotesingle{}East\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classgame_1_1_directions_a65ff55da10c03aa93e469ef4d7464994}\label{classgame_1_1_directions_a65ff55da10c03aa93e469ef4d7464994}} 
+string {\bfseries W\+E\+ST} = \textquotesingle{}West\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classgame_1_1_directions_aadd50b4011221fe87cc99c16ecf3c2b2}\label{classgame_1_1_directions_aadd50b4011221fe87cc99c16ecf3c2b2}} 
+string {\bfseries S\+T\+OP} = \textquotesingle{}Stop\textquotesingle{}
+\item 
+dictionary {\bfseries L\+E\+FT}
+\item 
+\mbox{\Hypertarget{classgame_1_1_directions_a2e9fca42b9c0e302aaf712fe3d3ad5be}\label{classgame_1_1_directions_a2e9fca42b9c0e302aaf712fe3d3ad5be}} 
+{\bfseries R\+I\+G\+HT} = dict(\mbox{[}(y,x) for x, y in list(L\+E\+F\+T.\+items())\mbox{]})
+\item 
+dictionary {\bfseries R\+E\+V\+E\+R\+SE}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgame_1_1_directions_a862c07c3211023e93b5eadfecabe1957}\label{classgame_1_1_directions_a862c07c3211023e93b5eadfecabe1957}} 
+\index{game\+::\+Directions@{game\+::\+Directions}!L\+E\+FT@{L\+E\+FT}}
+\index{L\+E\+FT@{L\+E\+FT}!game\+::\+Directions@{game\+::\+Directions}}
+\subsubsection{\texorpdfstring{L\+E\+FT}{LEFT}}
+{\footnotesize\ttfamily dictionary game.\+Directions.\+L\+E\+FT\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=        \{NORTH: WEST,
+                 SOUTH: EAST,
+                 EAST:  NORTH,
+                 WEST:  SOUTH,
+                 STOP:  STOP\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classgame_1_1_directions_ad48d0bb573f126a729c998b505812807}\label{classgame_1_1_directions_ad48d0bb573f126a729c998b505812807}} 
+\index{game\+::\+Directions@{game\+::\+Directions}!R\+E\+V\+E\+R\+SE@{R\+E\+V\+E\+R\+SE}}
+\index{R\+E\+V\+E\+R\+SE@{R\+E\+V\+E\+R\+SE}!game\+::\+Directions@{game\+::\+Directions}}
+\subsubsection{\texorpdfstring{R\+E\+V\+E\+R\+SE}{REVERSE}}
+{\footnotesize\ttfamily dictionary game.\+Directions.\+R\+E\+V\+E\+R\+SE\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{NORTH: SOUTH,
+             SOUTH: NORTH,
+             EAST: WEST,
+             WEST: EAST,
+             STOP: STOP\}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game.\+py\end{DoxyCompactItemize}

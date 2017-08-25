@@ -1,0 +1,297 @@
+\begin{theindex}
+
+  \item {\+\_\+\+\_\+add\+\_\+\+\_\+}
+    \subitem {util\+::\+Counter}, \hyperpage{21}
+  \item {\+\_\+\+\_\+eq\+\_\+\+\_\+}
+    \subitem {eightpuzzle\+::\+Eight\+Puzzle\+State}, \hyperpage{28}
+    \subitem {game\+::\+Game\+State\+Data}, \hyperpage{38}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{34}
+  \item {\+\_\+\+\_\+hash\+\_\+\+\_\+}
+    \subitem {game\+::\+Game\+State\+Data}, \hyperpage{38}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{34}
+  \item {\+\_\+\+\_\+init\+\_\+\+\_\+}
+    \subitem {eightpuzzle\+::\+Eight\+Puzzle\+State}, \hyperpage{28}
+    \subitem {game\+::\+Game\+State\+Data}, \hyperpage{37}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{34}
+    \subitem {search\+Agents\+::\+Corners\+Problem}, \hyperpage{19}
+    \subitem {search\+Agents\+::\+Position\+Search\+Problem}, 
+		\hyperpage{51}
+  \item {\+\_\+\+\_\+mul\+\_\+\+\_\+}
+    \subitem {util\+::\+Counter}, \hyperpage{22}
+  \item {\+\_\+\+\_\+radd\+\_\+\+\_\+}
+    \subitem {util\+::\+Counter}, \hyperpage{22}
+  \item {\+\_\+\+\_\+sub\+\_\+\+\_\+}
+    \subitem {util\+::\+Counter}, \hyperpage{22}
+
+  \indexspace
+
+  \item {agent\+Timeout}
+    \subitem {game\+::\+Game}, \hyperpage{33}
+  \item {apply\+Action}
+    \subitem {pacman\+::\+Pacman\+Rules}, \hyperpage{49}
+  \item {arg\+Max}
+    \subitem {util\+::\+Counter}, \hyperpage{23}
+
+  \indexspace
+
+  \item {copy}
+    \subitem {util\+::\+Counter}, \hyperpage{23}
+
+  \indexspace
+
+  \item {divide\+All}
+    \subitem {util\+::\+Counter}, \hyperpage{23}
+  \item {draw\+Expanded\+Cells}
+    \subitem {graphics\+Display\+::\+Pacman\+Graphics}, \hyperpage{48}
+
+  \indexspace
+
+  \item {eightpuzzle.\+Eight\+Puzzle\+Search\+Problem}, \hyperpage{26}
+  \item {eightpuzzle.\+Eight\+Puzzle\+State}, \hyperpage{27}
+  \item {eightpuzzle\+::\+Eight\+Puzzle\+Search\+Problem}
+    \subitem {get\+Cost\+Of\+Actions}, \hyperpage{27}
+    \subitem {get\+Successors}, \hyperpage{27}
+  \item {eightpuzzle\+::\+Eight\+Puzzle\+State}
+    \subitem {\+\_\+\+\_\+eq\+\_\+\+\_\+}, \hyperpage{28}
+    \subitem {\+\_\+\+\_\+init\+\_\+\+\_\+}, \hyperpage{28}
+    \subitem {is\+Goal}, \hyperpage{29}
+    \subitem {legal\+Moves}, \hyperpage{29}
+    \subitem {result}, \hyperpage{29}
+
+  \indexspace
+
+  \item {game.\+Actions}, \hyperpage{11}
+  \item {game.\+Agent}, \hyperpage{12}
+  \item {game.\+Agent\+State}, \hyperpage{13}
+  \item {game.\+Configuration}, \hyperpage{18}
+  \item {game.\+Directions}, \hyperpage{25}
+  \item {game.\+Game}, \hyperpage{32}
+  \item {game.\+Game\+State\+Data}, \hyperpage{37}
+  \item {game.\+Grid}, \hyperpage{41}
+  \item {game\+::\+Agent}
+    \subitem {get\+Action}, \hyperpage{12}
+  \item {game\+::\+Configuration}
+    \subitem {generate\+Successor}, \hyperpage{18}
+  \item {game\+::\+Directions}
+    \subitem {L\+E\+FT}, \hyperpage{25}
+    \subitem {R\+E\+V\+E\+R\+SE}, \hyperpage{26}
+  \item {game\+::\+Game}
+    \subitem {agent\+Timeout}, \hyperpage{33}
+    \subitem {run}, \hyperpage{32}
+  \item {game\+::\+Game\+State\+Data}
+    \subitem {\+\_\+\+\_\+eq\+\_\+\+\_\+}, \hyperpage{38}
+    \subitem {\+\_\+\+\_\+hash\+\_\+\+\_\+}, \hyperpage{38}
+    \subitem {\+\_\+\+\_\+init\+\_\+\+\_\+}, \hyperpage{37}
+    \subitem {initialize}, \hyperpage{38}
+  \item {game\+::\+Grid}
+    \subitem {pack\+Bits}, \hyperpage{42}
+  \item {generate\+Pacman\+Successor}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{35}
+  \item {generate\+Successor}
+    \subitem {game\+::\+Configuration}, \hyperpage{18}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{35}
+  \item {get\+Action}
+    \subitem {game\+::\+Agent}, \hyperpage{12}
+    \subitem {search\+Agents\+::\+Approximate\+Search\+Agent}, 
+		\hyperpage{15}
+    \subitem {search\+Agents\+::\+Search\+Agent}, \hyperpage{55}
+  \item {get\+Capsules}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{35}
+  \item {get\+Cost\+Of\+Actions}
+    \subitem {eightpuzzle\+::\+Eight\+Puzzle\+Search\+Problem}, 
+		\hyperpage{27}
+    \subitem {search\+::\+Search\+Problem}, \hyperpage{56}
+    \subitem {search\+Agents\+::\+Corners\+Problem}, \hyperpage{20}
+    \subitem {search\+Agents\+::\+Food\+Search\+Problem}, 
+		\hyperpage{31}
+    \subitem {search\+Agents\+::\+Position\+Search\+Problem}, 
+		\hyperpage{51}
+  \item {get\+Food}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{35}
+  \item {get\+Legal\+Actions}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{36}
+    \subitem {pacman\+::\+Ghost\+Rules}, \hyperpage{40}
+    \subitem {pacman\+::\+Pacman\+Rules}, \hyperpage{49}
+  \item {get\+Pacman\+State}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{36}
+  \item {get\+Start\+State}
+    \subitem {search\+::\+Search\+Problem}, \hyperpage{56}
+  \item {get\+Successors}
+    \subitem {eightpuzzle\+::\+Eight\+Puzzle\+Search\+Problem}, 
+		\hyperpage{27}
+    \subitem {search\+::\+Search\+Problem}, \hyperpage{56}
+    \subitem {search\+Agents\+::\+Corners\+Problem}, \hyperpage{20}
+    \subitem {search\+Agents\+::\+Position\+Search\+Problem}, 
+		\hyperpage{51}
+  \item {get\+Walls}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{36}
+  \item {ghost\+Agents.\+Directional\+Ghost}, \hyperpage{25}
+  \item {ghost\+Agents.\+Ghost\+Agent}, \hyperpage{39}
+  \item {ghost\+Agents.\+Random\+Ghost}, \hyperpage{54}
+  \item {graphics\+Display.\+First\+Person\+Pacman\+Graphics}, 
+		\hyperpage{30}
+  \item {graphics\+Display.\+Info\+Pane}, \hyperpage{42}
+  \item {graphics\+Display.\+Pacman\+Graphics}, \hyperpage{47}
+  \item {graphics\+Display\+::\+Info\+Pane}
+    \subitem {to\+Screen}, \hyperpage{43}
+  \item {graphics\+Display\+::\+Pacman\+Graphics}
+    \subitem {draw\+Expanded\+Cells}, \hyperpage{48}
+    \subitem {swap\+Images}, \hyperpage{48}
+
+  \indexspace
+
+  \item {increment\+All}
+    \subitem {util\+::\+Counter}, \hyperpage{23}
+  \item {initialize}
+    \subitem {game\+::\+Game\+State\+Data}, \hyperpage{38}
+    \subitem {pacman\+::\+Game\+State}, \hyperpage{36}
+  \item {is\+Goal}
+    \subitem {eightpuzzle\+::\+Eight\+Puzzle\+State}, \hyperpage{29}
+  \item {is\+Goal\+State}
+    \subitem {search\+::\+Search\+Problem}, \hyperpage{57}
+    \subitem {search\+Agents\+::\+Any\+Food\+Search\+Problem}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {keyboard\+Agents.\+Keyboard\+Agent}, \hyperpage{43}
+  \item {keyboard\+Agents.\+Keyboard\+Agent2}, \hyperpage{44}
+
+  \indexspace
+
+  \item {L\+E\+FT}
+    \subitem {game\+::\+Directions}, \hyperpage{25}
+  \item {layout.\+Layout}, \hyperpage{45}
+  \item {layout\+::\+Layout}
+    \subitem {process\+Layout\+Text}, \hyperpage{45}
+  \item {legal\+Moves}
+    \subitem {eightpuzzle\+::\+Eight\+Puzzle\+State}, \hyperpage{29}
+
+  \indexspace
+
+  \item {normalize}
+    \subitem {util\+::\+Counter}, \hyperpage{24}
+
+  \indexspace
+
+  \item {pack\+Bits}
+    \subitem {game\+::\+Grid}, \hyperpage{42}
+  \item {pacman.\+Classic\+Game\+Rules}, \hyperpage{16}
+  \item {pacman.\+Game\+State}, \hyperpage{33}
+  \item {pacman.\+Ghost\+Rules}, \hyperpage{39}
+  \item {pacman.\+Pacman\+Rules}, \hyperpage{49}
+  \item {pacman\+::\+Classic\+Game\+Rules}
+    \subitem {process}, \hyperpage{17}
+  \item {pacman\+::\+Game\+State}
+    \subitem {\+\_\+\+\_\+eq\+\_\+\+\_\+}, \hyperpage{34}
+    \subitem {\+\_\+\+\_\+hash\+\_\+\+\_\+}, \hyperpage{34}
+    \subitem {\+\_\+\+\_\+init\+\_\+\+\_\+}, \hyperpage{34}
+    \subitem {generate\+Pacman\+Successor}, \hyperpage{35}
+    \subitem {generate\+Successor}, \hyperpage{35}
+    \subitem {get\+Capsules}, \hyperpage{35}
+    \subitem {get\+Food}, \hyperpage{35}
+    \subitem {get\+Legal\+Actions}, \hyperpage{36}
+    \subitem {get\+Pacman\+State}, \hyperpage{36}
+    \subitem {get\+Walls}, \hyperpage{36}
+    \subitem {initialize}, \hyperpage{36}
+  \item {pacman\+::\+Ghost\+Rules}
+    \subitem {get\+Legal\+Actions}, \hyperpage{40}
+  \item {pacman\+::\+Pacman\+Rules}
+    \subitem {apply\+Action}, \hyperpage{49}
+    \subitem {get\+Legal\+Actions}, \hyperpage{49}
+  \item {pacman\+Agents.\+Greedy\+Agent}, \hyperpage{41}
+  \item {pacman\+Agents.\+Left\+Turn\+Agent}, \hyperpage{46}
+  \item {pop}
+    \subitem {util\+::\+Queue}, \hyperpage{53}
+  \item {process}
+    \subitem {pacman\+::\+Classic\+Game\+Rules}, \hyperpage{17}
+  \item {process\+Layout\+Text}
+    \subitem {layout\+::\+Layout}, \hyperpage{45}
+
+  \indexspace
+
+  \item {R\+E\+V\+E\+R\+SE}
+    \subitem {game\+::\+Directions}, \hyperpage{26}
+  \item {register\+Initial\+State}
+    \subitem {search\+Agents\+::\+Search\+Agent}, \hyperpage{55}
+  \item {result}
+    \subitem {eightpuzzle\+::\+Eight\+Puzzle\+State}, \hyperpage{29}
+  \item {run}
+    \subitem {game\+::\+Game}, \hyperpage{32}
+
+  \indexspace
+
+  \item {search.\+Search\+Problem}, \hyperpage{56}
+  \item {search\+::\+Search\+Problem}
+    \subitem {get\+Cost\+Of\+Actions}, \hyperpage{56}
+    \subitem {get\+Start\+State}, \hyperpage{56}
+    \subitem {get\+Successors}, \hyperpage{56}
+    \subitem {is\+Goal\+State}, \hyperpage{57}
+  \item {search\+Agents.\+A\+Star\+Corners\+Agent}, \hyperpage{15}
+  \item {search\+Agents.\+A\+Star\+Food\+Search\+Agent}, \hyperpage{16}
+  \item {search\+Agents.\+Any\+Food\+Search\+Problem}, \hyperpage{13}
+  \item {search\+Agents.\+Approximate\+Search\+Agent}, \hyperpage{14}
+  \item {search\+Agents.\+Closest\+Dot\+Search\+Agent}, \hyperpage{17}
+  \item {search\+Agents.\+Corners\+Problem}, \hyperpage{19}
+  \item {search\+Agents.\+Food\+Search\+Problem}, \hyperpage{31}
+  \item {search\+Agents.\+Go\+West\+Agent}, \hyperpage{40}
+  \item {search\+Agents.\+Position\+Search\+Problem}, \hyperpage{50}
+  \item {search\+Agents.\+Search\+Agent}, \hyperpage{54}
+  \item {search\+Agents.\+Stay\+East\+Search\+Agent}, \hyperpage{58}
+  \item {search\+Agents.\+Stay\+West\+Search\+Agent}, \hyperpage{58}
+  \item {search\+Agents\+::\+Any\+Food\+Search\+Problem}
+    \subitem {is\+Goal\+State}, \hyperpage{14}
+  \item {search\+Agents\+::\+Approximate\+Search\+Agent}
+    \subitem {get\+Action}, \hyperpage{15}
+  \item {search\+Agents\+::\+Corners\+Problem}
+    \subitem {\+\_\+\+\_\+init\+\_\+\+\_\+}, \hyperpage{19}
+    \subitem {get\+Cost\+Of\+Actions}, \hyperpage{20}
+    \subitem {get\+Successors}, \hyperpage{20}
+  \item {search\+Agents\+::\+Food\+Search\+Problem}
+    \subitem {get\+Cost\+Of\+Actions}, \hyperpage{31}
+  \item {search\+Agents\+::\+Position\+Search\+Problem}
+    \subitem {\+\_\+\+\_\+init\+\_\+\+\_\+}, \hyperpage{51}
+    \subitem {get\+Cost\+Of\+Actions}, \hyperpage{51}
+    \subitem {get\+Successors}, \hyperpage{51}
+  \item {search\+Agents\+::\+Search\+Agent}
+    \subitem {get\+Action}, \hyperpage{55}
+    \subitem {register\+Initial\+State}, \hyperpage{55}
+  \item {sorted\+Keys}
+    \subitem {util\+::\+Counter}, \hyperpage{24}
+  \item {swap\+Images}
+    \subitem {graphics\+Display\+::\+Pacman\+Graphics}, \hyperpage{48}
+
+  \indexspace
+
+  \item {text\+Display.\+Null\+Graphics}, \hyperpage{46}
+  \item {text\+Display.\+Pacman\+Graphics}, \hyperpage{47}
+  \item {to\+Screen}
+    \subitem {graphics\+Display\+::\+Info\+Pane}, \hyperpage{43}
+  \item {total\+Count}
+    \subitem {util\+::\+Counter}, \hyperpage{24}
+
+  \indexspace
+
+  \item {util.\+Counter}, \hyperpage{20}
+  \item {util.\+Priority\+Queue}, \hyperpage{52}
+  \item {util.\+Priority\+Queue\+With\+Function}, \hyperpage{52}
+  \item {util.\+Queue}, \hyperpage{53}
+  \item {util.\+Stack}, \hyperpage{57}
+  \item {util.\+Timeout\+Function}, \hyperpage{59}
+  \item {util.\+Timeout\+Function\+Exception}, \hyperpage{59}
+  \item {util\+::\+Counter}
+    \subitem {\+\_\+\+\_\+add\+\_\+\+\_\+}, \hyperpage{21}
+    \subitem {\+\_\+\+\_\+mul\+\_\+\+\_\+}, \hyperpage{22}
+    \subitem {\+\_\+\+\_\+radd\+\_\+\+\_\+}, \hyperpage{22}
+    \subitem {\+\_\+\+\_\+sub\+\_\+\+\_\+}, \hyperpage{22}
+    \subitem {arg\+Max}, \hyperpage{23}
+    \subitem {copy}, \hyperpage{23}
+    \subitem {divide\+All}, \hyperpage{23}
+    \subitem {increment\+All}, \hyperpage{23}
+    \subitem {normalize}, \hyperpage{24}
+    \subitem {sorted\+Keys}, \hyperpage{24}
+    \subitem {total\+Count}, \hyperpage{24}
+  \item {util\+::\+Queue}
+    \subitem {pop}, \hyperpage{53}
+
+\end{theindex}

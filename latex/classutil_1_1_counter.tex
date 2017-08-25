@@ -1,0 +1,234 @@
+\hypertarget{classutil_1_1_counter}{}\section{util.\+Counter Class Reference}
+\label{classutil_1_1_counter}\index{util.\+Counter@{util.\+Counter}}
+Inheritance diagram for util.\+Counter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classutil_1_1_counter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classutil_1_1_counter_a5adf33996410dfdeddfdb4d6d600a587}\label{classutil_1_1_counter_a5adf33996410dfdeddfdb4d6d600a587}} 
+def {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, idx)
+\item 
+def \hyperlink{classutil_1_1_counter_a92c9ebbb536e6febb2b2856f30f21804}{increment\+All} (self, keys, count)
+\item 
+def \hyperlink{classutil_1_1_counter_ac783df5e03c63469983b812fd5aff0c2}{arg\+Max} (self)
+\item 
+def \hyperlink{classutil_1_1_counter_a8e32d106f34cb7cd8341e78b49f5e40a}{sorted\+Keys} (self)
+\item 
+def \hyperlink{classutil_1_1_counter_a452a24a68fa547c7bf56e619be6bab6d}{total\+Count} (self)
+\item 
+def \hyperlink{classutil_1_1_counter_a5d3243989dde93af492d2a7618ea322f}{normalize} (self)
+\item 
+def \hyperlink{classutil_1_1_counter_a510574fa4c36d2d4c845b9f6ac5bc155}{divide\+All} (self, divisor)
+\item 
+def \hyperlink{classutil_1_1_counter_ac57004446c3d5a15948e7803a0af3d56}{copy} (self)
+\item 
+def \hyperlink{classutil_1_1_counter_a9f43e857acc90d489555652af32dcd1c}{\+\_\+\+\_\+mul\+\_\+\+\_\+} (self, y)
+\item 
+def \hyperlink{classutil_1_1_counter_a4d15b474f84349a6d6b0694066b16ac2}{\+\_\+\+\_\+radd\+\_\+\+\_\+} (self, y)
+\item 
+def \hyperlink{classutil_1_1_counter_ac9dfb7fe386dc63f8d27a66984d5bc75}{\+\_\+\+\_\+add\+\_\+\+\_\+} (self, y)
+\item 
+def \hyperlink{classutil_1_1_counter_a541fd5f4f74e910852c589ff23b4b280}{\+\_\+\+\_\+sub\+\_\+\+\_\+} (self, y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A counter keeps track of counts for a set of keys.
+
+The counter class is an extension of the standard python
+dictionary type.  It is specialized to have number values  
+(integers or floats), and includes a handful of additional
+functions to ease the task of counting data.  In particular, 
+all keys are defaulted to have value 0.  Using a dictionary:
+
+a = {}
+print a['test']
+
+would give an error, while the Counter class analogue:
+  
+>>> a = Counter()
+>>> print a['test']
+0
+
+returns the default 0 value. Note that to reference a key 
+that you know is contained in the counter, 
+you can still use the dictionary syntax:
+  
+>>> a = Counter()
+>>> a['test'] = 2
+>>> print a['test']
+2
+
+This is very useful for counting things without initializing their counts,
+see for example:
+
+>>> a['blah'] += 1
+>>> print a['blah']
+1
+
+The counter also includes additional functionality useful in implementing
+the classifiers for this assignment.  Two counters can be added,
+subtracted or multiplied together.  See below for details.  They can
+also be normalized and their total count and arg max can be extracted.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classutil_1_1_counter_ac9dfb7fe386dc63f8d27a66984d5bc75}\label{classutil_1_1_counter_ac9dfb7fe386dc63f8d27a66984d5bc75}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!\+\_\+\+\_\+add\+\_\+\+\_\+@{\+\_\+\+\_\+add\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+add\+\_\+\+\_\+@{\+\_\+\+\_\+add\+\_\+\+\_\+}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+add\+\_\+\+\_\+()}{\_\_add\_\_()}}
+{\footnotesize\ttfamily def util.\+Counter.\+\_\+\+\_\+add\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adding two counters gives a counter with the union of all keys and
+counts of the second added to counts of the first.
+
+>>> a = Counter()
+>>> b = Counter()
+>>> a['first'] = -2
+>>> a['second'] = 4
+>>> b['first'] = 3
+>>> b['third'] = 1
+>>> (a + b)['first']
+1
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_a9f43e857acc90d489555652af32dcd1c}\label{classutil_1_1_counter_a9f43e857acc90d489555652af32dcd1c}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!\+\_\+\+\_\+mul\+\_\+\+\_\+@{\+\_\+\+\_\+mul\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+mul\+\_\+\+\_\+@{\+\_\+\+\_\+mul\+\_\+\+\_\+}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+mul\+\_\+\+\_\+()}{\_\_mul\_\_()}}
+{\footnotesize\ttfamily def util.\+Counter.\+\_\+\+\_\+mul\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Multiplying two counters gives the dot product of their vectors where
+each unique label is a vector element.
+
+>>> a = Counter()
+>>> b = Counter()
+>>> a['first'] = -2
+>>> a['second'] = 4
+>>> b['first'] = 3
+>>> b['second'] = 5
+>>> a['third'] = 1.5
+>>> a['fourth'] = 2.5
+>>> a * b
+14
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_a4d15b474f84349a6d6b0694066b16ac2}\label{classutil_1_1_counter_a4d15b474f84349a6d6b0694066b16ac2}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!\+\_\+\+\_\+radd\+\_\+\+\_\+@{\+\_\+\+\_\+radd\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+radd\+\_\+\+\_\+@{\+\_\+\+\_\+radd\+\_\+\+\_\+}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+radd\+\_\+\+\_\+()}{\_\_radd\_\_()}}
+{\footnotesize\ttfamily def util.\+Counter.\+\_\+\+\_\+radd\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adding another counter to a counter increments the current counter
+by the values stored in the second counter.
+
+>>> a = Counter()
+>>> b = Counter()
+>>> a['first'] = -2
+>>> a['second'] = 4
+>>> b['first'] = 3
+>>> b['third'] = 1
+>>> a += b
+>>> a['first']
+1
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_a541fd5f4f74e910852c589ff23b4b280}\label{classutil_1_1_counter_a541fd5f4f74e910852c589ff23b4b280}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!\+\_\+\+\_\+sub\+\_\+\+\_\+@{\+\_\+\+\_\+sub\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+sub\+\_\+\+\_\+@{\+\_\+\+\_\+sub\+\_\+\+\_\+}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+sub\+\_\+\+\_\+()}{\_\_sub\_\_()}}
+{\footnotesize\ttfamily def util.\+Counter.\+\_\+\+\_\+sub\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subtracting a counter from another gives a counter with the union of all keys and
+counts of the second subtracted from counts of the first.
+
+>>> a = Counter()
+>>> b = Counter()
+>>> a['first'] = -2
+>>> a['second'] = 4
+>>> b['first'] = 3
+>>> b['third'] = 1
+>>> (a - b)['first']
+-5
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_ac783df5e03c63469983b812fd5aff0c2}\label{classutil_1_1_counter_ac783df5e03c63469983b812fd5aff0c2}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!arg\+Max@{arg\+Max}}
+\index{arg\+Max@{arg\+Max}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{arg\+Max()}{argMax()}}
+{\footnotesize\ttfamily def util.\+Counter.\+arg\+Max (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the key with the highest value.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_ac57004446c3d5a15948e7803a0af3d56}\label{classutil_1_1_counter_ac57004446c3d5a15948e7803a0af3d56}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!copy@{copy}}
+\index{copy@{copy}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily def util.\+Counter.\+copy (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a copy of the counter
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_a510574fa4c36d2d4c845b9f6ac5bc155}\label{classutil_1_1_counter_a510574fa4c36d2d4c845b9f6ac5bc155}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!divide\+All@{divide\+All}}
+\index{divide\+All@{divide\+All}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{divide\+All()}{divideAll()}}
+{\footnotesize\ttfamily def util.\+Counter.\+divide\+All (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{divisor }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Divides all counts by divisor
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_a92c9ebbb536e6febb2b2856f30f21804}\label{classutil_1_1_counter_a92c9ebbb536e6febb2b2856f30f21804}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!increment\+All@{increment\+All}}
+\index{increment\+All@{increment\+All}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{increment\+All()}{incrementAll()}}
+{\footnotesize\ttfamily def util.\+Counter.\+increment\+All (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{keys,  }\item[{}]{count }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Increments all elements of keys by the same count.
+
+>>> a = Counter()
+>>> a.incrementAll(['one','two', 'three'], 1)
+>>> a['one']
+1
+>>> a['two']
+1
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_a5d3243989dde93af492d2a7618ea322f}\label{classutil_1_1_counter_a5d3243989dde93af492d2a7618ea322f}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!normalize@{normalize}}
+\index{normalize@{normalize}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily def util.\+Counter.\+normalize (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Edits the counter such that the total count of all
+keys sums to 1.  The ratio of counts for all keys
+will remain the same. Note that normalizing an empty 
+Counter will result in an error.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_a8e32d106f34cb7cd8341e78b49f5e40a}\label{classutil_1_1_counter_a8e32d106f34cb7cd8341e78b49f5e40a}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!sorted\+Keys@{sorted\+Keys}}
+\index{sorted\+Keys@{sorted\+Keys}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{sorted\+Keys()}{sortedKeys()}}
+{\footnotesize\ttfamily def util.\+Counter.\+sorted\+Keys (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of keys sorted by their values.  Keys
+with the highest values will appear first.
+
+>>> a = Counter()
+>>> a['first'] = -2
+>>> a['second'] = 4
+>>> a['third'] = 1
+>>> a.sortedKeys()
+['second', 'third', 'first']
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classutil_1_1_counter_a452a24a68fa547c7bf56e619be6bab6d}\label{classutil_1_1_counter_a452a24a68fa547c7bf56e619be6bab6d}} 
+\index{util\+::\+Counter@{util\+::\+Counter}!total\+Count@{total\+Count}}
+\index{total\+Count@{total\+Count}!util\+::\+Counter@{util\+::\+Counter}}
+\subsubsection{\texorpdfstring{total\+Count()}{totalCount()}}
+{\footnotesize\ttfamily def util.\+Counter.\+total\+Count (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the sum of counts for all keys.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+util.\+py\end{DoxyCompactItemize}
