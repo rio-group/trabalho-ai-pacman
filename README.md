@@ -3,12 +3,19 @@
 
 ![pacman maze](http://ai.berkeley.edu/images/pacman_game.gif)
 
+> **Notes:**
+> 
 > * Based on Pacman search problems originally from [Berkeley AI CS 188](http://inst.eecs.berkeley.edu/~cs188/). 
 > * Original code has been ported to Python 3.x.
+
+> **Importante:** 
+> 
+> * O código foi atualizado para funzionar usando Python 3.4 ou superior.
 
 ## Introdução
 
 Neste trabalho, o agente Pacman tem que encontrar caminhos no labirinto, tanto para chegar a um destino quanto para coletar comida eficientemente. O objetivo do trabalho será programar algoritmos de busca e aplicá-los ao cenário do Pacman. O código desse trabalho consiste de diversos arquivos Python, alguns dos quais você terá que ler e entender para fazer o trabalho.
+
 
 Arquivos que devem ser editados:
 
@@ -40,19 +47,26 @@ Arquivos que podem ser ignorados:
 
 Documentação disponível:
 
-* Este arquivo [como pdf](https://gitprint.com/AI-2017-2/trabalho-1-base/blob/master/README.md).
-* Documentação do código online.
-* Documentação do código em pdf.
+* Este arquivo [como pdf](https://gitprint.com/rio-group/trabalho-ai-pacman/blob/master/README.md).
+* Documentação do código [online](https://rio-group.github.io/trabalho-ai-pacman/).
+* Documentação do código [em pdf](https://rio-group.github.io/trabalho-ai-pacman/pacman-doxy.pdf).
 
 ## O que deve ser entregue
 
-* Os arquivos `search.py` e `searchAgents.py` serão modificados no trabalho.
-
-Cada grupo deve entregar esses dois arquivos e deve entregar também um relatório impresso respondendo as perguntas listadas abaixo. Cada grupo deve ser composto de 2 ou 3 alunos.
+* Arquivo `.zip` contendo os arquivos `search.py` e `searchAgents.py` serão modificados no trabalho.
+* Documento `.pdf` com as respostas às perguntas que aparecem listadas abaixo.
 
 ## Descrição do trabalho
 
-Depois de baixar o código (search.zip), descompactá-lo e entrar no diretório search, você pode jogar um jogo de Pacman digitando a seguinte linha de comando:
+Depois de baixar o código usando o link [https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip](https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip), descompactá-lo e entrar no resultante.
+
+Alternativamente, você pode clonar o repositório de GitHub usando o GitHub Desktop (ou outro aplicativo similar) ou digitando na linha de comando:
+
+```bash
+git clone https://github.com/rio-group/trabalho-ai-pacman.git
+```
+
+Depois do passo anterior, você pode jogar um jogo de Pacman digitando a seguinte linha de comando:
 
 ```bash
 python pacman.py
@@ -112,7 +126,9 @@ python pacman.py -l bigMaze -z .5 -p SearchAgent
 
 A saída do Pacman irá mostrar os estados explorados e a ordem em que eles foram explorados (vermelho mais forte significa que o estado foi explorado antes).
 
-- **Pergunta 1:** A ordem de exploração foi de acordo com o esperado? O Pacman realmente passa por todos os estados explorados no seu caminho para o objetivo?Dica: Se você usar a pilha Stack como estrutura de dados, a solução encontrada pelo algoritmo DFS para o mediumMaze deve ter comprimento 130 (se os sucessores forem colocados na pilha na ordem dada por getSuccessors; pode ter comprimento 246 se forem colocados na ordem reversa). (Pergunta 2) Essa é uma solução ótima? Senão, o que a busca em profundidade está fazendo de errado?
+**Pergunta 1:** A ordem de exploração foi de acordo com o esperado? O Pacman realmente passa por todos os estados explorados no seu caminho para o objetivo?Dica: Se você usar a pilha Stack como estrutura de dados, a solução encontrada pelo algoritmo DFS para o mediumMaze deve ter comprimento 130 (se os sucessores forem colocados na pilha na ordem dada por getSuccessors; pode ter comprimento 246 se forem colocados na ordem reversa). 
+
+**Pergunta 2**: Essa é uma solução ótima? Senão, o que a busca em profundidade está fazendo de errado?
 
 ## Etapa 2 (2 pontos)
 
@@ -123,13 +139,13 @@ python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
 python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
 ```
 
-- **Pergunta 3:** A busca BFS encontra a solução ótima? Senão, verifique a sua implementação. Se o seu código foi escrito de maneira correta, ele deve funcionar também para o quebra-cabeças de 8 peças (seção 3.2 do livro-texto) sem modificações.
+**Pergunta 3:** A busca BFS encontra a solução ótima? Senão, verifique a sua implementação. Se o seu código foi escrito de maneira correta, ele deve funcionar também para o quebra-cabeças de 8 peças (seção 3.2 do livro-texto) sem modificações.
 
 ```bash
 python eightpuzzle.py
 ```
 
-A busca BFS vai encontrar o caminho com o menor número de ações até o objetivo. Porém, podemos querer encontrar caminhos que sejam melhores de acordo com outros critérios. Considere o labirinto mediumDottedMaze e o labirinto mediumScaryMaze. Mudando a função de custo, podemos fazer o Pacman encontrar caminhos diferentes. Por exemplo, podemos ter custos maiores para passar por áreas com fantasmas e custos menores para passar em áreas com comida, e um agente Pacman racional deve poder ajustar o seu comportamento.
+A busca BFS vai encontrar o caminho com o menor número de ações até o objetivo. Porém, podemos querer encontrar caminhos que sejam melhores de acordo com outros critérios. Considere o labirinto `mediumDottedMaze` e o labirinto `mediumScaryMaze`. Mudando a função de custo, podemos fazer o Pacman encontrar caminhos diferentes. Por exemplo, podemos ter custos maiores para passar por áreas com fantasmas e custos menores para passar em áreas com comida, e um agente Pacman racional deve poder ajustar o seu comportamento.
 
 ## Etapa 3 (2 pontos)
 
