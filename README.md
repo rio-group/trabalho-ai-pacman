@@ -2,9 +2,9 @@
 # Trabalho Prático: *Métodos de Busca no Pacman*
 
 ![pacman maze](http://ai.berkeley.edu/images/pacman_game.gif)
-![Python 3.x](https://img.shields.io/badge/python-3.x-green.svg)
 
-> Based on Pacman search problems originally from [Berkeley AI CS 188](http://inst.eecs.berkeley.edu/~cs188/). Original code has been ported to Python 3.x.
+> * Based on Pacman search problems originally from [Berkeley AI CS 188](http://inst.eecs.berkeley.edu/~cs188/). 
+> * Original code has been ported to Python 3.x.
 
 ## Introdução
 
@@ -26,25 +26,31 @@ Arquivos que devem ser lidos:
 
 Arquivos que podem ser ignorados:
 
-* `graphicsDisplay.py` - Visualização gráfica do Pacman
+* `graphicsDisplay.py` - Visualização gráfica do Pacman.
 
-* `graphicsUtils.py` - Funções auxiliares para visualização gráfica do Pacman
+* `graphicsUtils.py` - Funções auxiliares para visualização gráfica do Pacman.
 
-* `textDisplay.py` - Visualização gráfica em ASCII para o Pacman
+* `textDisplay.py` - Visualização gráfica em ASCII para o Pacman.
 
-* `ghostAgents.py` - Agentes para controlar fantasmas
+* `ghostAgents.py` - Agentes para controlar fantasmas.
 
-* `keyboardAgents.py` - Interfaces de controle do Pacman a partir do teclado
+* `keyboardAgents.py` - Interfaces de controle do Pacman a partir do teclado.
 
-* `layout.py` - Código para ler arquivos de layout e guardar seu conteúdo
+* `layout.py` - Código para ler arquivos de layout e guardar seu conteúdo.
 
-O que deve ser entregue:
+Documentação disponível:
+
+* Este arquivo [como pdf](https://gitprint.com/AI-2017-2/trabalho-1-base/blob/master/README.md).
+* Documentação do código online.
+* Documentação do código em pdf.
+
+## O que deve ser entregue
 
 * Os arquivos `search.py` e `searchAgents.py` serão modificados no trabalho.
 
 Cada grupo deve entregar esses dois arquivos e deve entregar também um relatório impresso respondendo as perguntas listadas abaixo. Cada grupo deve ser composto de 2 ou 3 alunos.
 
-Bem-vindo ao Pacman
+## Descrição do trabalho
 
 Depois de baixar o código (search.zip), descompactá-lo e entrar no diretório search, você pode jogar um jogo de Pacman digitando a seguinte linha de comando:
 
