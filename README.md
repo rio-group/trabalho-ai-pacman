@@ -3,14 +3,15 @@
 
 ![pacman maze](http://ai.berkeley.edu/images/pacman_game.gif)
 
-> **Notes:**
-> 
-> * Based on Pacman search problems originally from [Berkeley AI CS 188](http://inst.eecs.berkeley.edu/~cs188/). 
-> * Original code has been ported to Python 3.x.
+---
+**Notes:**
 
-> **Importante:** 
-> 
-> * O código foi atualizado para funzionar usando Python 3.4 ou superior.
+* Based on Pacman search problems originally from [Berkeley AI CS 188](http://inst.eecs.berkeley.edu/~cs188/). 
+* Original code has been ported to Python 3.x.
+
+**Importante:** 
+
+* O código foi atualizado para funcionar usando Python 3.4 ou superior.
 
 ## Introdução
 
@@ -58,7 +59,7 @@ Documentação disponível:
 
 ## Descrição do trabalho
 
-Depois de baixar o código usando o link [https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip](https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip), descompactá-lo e entrar na pasta resultante.
+Depois de baixar o código usando o link [https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip](https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip), descompacte-lo e entre na pasta resultante.
 
 Alternativamente, você pode clonar o repositório de GitHub usando o GitHub Desktop (ou outro aplicativo similar) ou digitando na linha de comando:
 
