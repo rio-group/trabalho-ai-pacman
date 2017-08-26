@@ -58,7 +58,7 @@ Documentação disponível:
 
 ## Descrição do trabalho
 
-Depois de baixar o código usando o link [https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip](https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip), descompactá-lo e entrar no resultante.
+Depois de baixar o código usando o link [https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip](https://github.com/rio-group/trabalho-ai-pacman/archive/master.zip), descompactá-lo e entrar na pasta resultante.
 
 Alternativamente, você pode clonar o repositório de GitHub usando o GitHub Desktop (ou outro aplicativo similar) ou digitando na linha de comando:
 
@@ -171,7 +171,7 @@ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattan
 
 A busca A* deve achar a solução ótima um pouco mais rapidamente que a busca de custo uniforme (549 vs. 621 nós de busca expandidos na nossa implementação).
 
-# Coletando comida
+## Coletando comida
 
 Agora iremos atacar um problema mais difícil: fazer o Pacman comer toda a comida no menor número de passos possível. Para isso, usaremos uma nova definição de problema de busca que formaliza esse problema: `FoodSearchProblem` no arquivo `searchAgents.py` (já implementado). Uma solução é um caminho que coleta toda a comida no mundo do Pacman. A solução não será modificada se houverem fantasmas no caminho; ela só depende do posicionamento das paredes, da comida e do Pacman. Se os seus algoritmos de busca estiverem corretos, A* com uma heurística nula (equivalente a busca de custo uniforme) deve encontrar uma solução para o problema testSearch sem nenhuma mudança no código (custo total de 7).
 
