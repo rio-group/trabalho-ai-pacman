@@ -6,10 +6,10 @@
 ---
 **Notes:**
 
-* Based on Pacman search problems originally from [Berkeley AI CS 188](http://inst.eecs.berkeley.edu/~cs188/). 
+* Based on Pacman search problems originally from [Berkeley AI CS 188](http://inst.eecs.berkeley.edu/~cs188/).
 * Original code has been ported to Python 3.x.
 
-**Importante:** 
+**Importante:**
 
 * O código foi atualizado para funcionar usando Python 3.4 ou superior.
 
@@ -95,7 +95,7 @@ Todos os comandos que aparecem aqui também estão em `commands.txt`, e podem se
 
 Encontrando comida em um ponto fixo usando algoritmos de busca
 
-No arquivo `searchAgents.py`, você irá encontrar o programa de um agente de busca (`SearchAgent`), que planeja um caminho no mundo do Pacman e executa o caminho passo-a-passo. Os algoritmos de busca para planejar o caminho não estão implementados -- este será o seu trabalho.
+No arquivo `searchAgents.py`, você irá encontrar o programa de um agente de busca (`SearchAgent`), que planeja um caminho no mundo do Pacman e executa o caminho passo-a-passo. Os algoritmos de busca para planejar o caminho não estão implementados -- **este será o seu trabalho**.
 
 Para entender o que está descrito a seguir, pode ser necessário olhar esse glossário de objetos. Primeiro, verifique que o agente de busca SearchAgent está funcionando corretamente, rodando:
 
@@ -127,7 +127,7 @@ python pacman.py -l bigMaze -z .5 -p SearchAgent
 
 A saída do Pacman irá mostrar os estados explorados e a ordem em que eles foram explorados (vermelho mais forte significa que o estado foi explorado antes).
 
-**Pergunta 1:** A ordem de exploração foi de acordo com o esperado? O Pacman realmente passa por todos os estados explorados no seu caminho para o objetivo?Dica: Se você usar a pilha Stack como estrutura de dados, a solução encontrada pelo algoritmo DFS para o mediumMaze deve ter comprimento 130 (se os sucessores forem colocados na pilha na ordem dada por getSuccessors; pode ter comprimento 246 se forem colocados na ordem reversa). 
+**Pergunta 1:** A ordem de exploração foi de acordo com o esperado? O Pacman realmente passa por todos os estados explorados no seu caminho para o objetivo?Dica: Se você usar a pilha Stack como estrutura de dados, a solução encontrada pelo algoritmo DFS para o mediumMaze deve ter comprimento 130 (se os sucessores forem colocados na pilha na ordem dada por getSuccessors; pode ter comprimento 246 se forem colocados na ordem reversa).
 
 **Pergunta 2**: Essa é uma solução ótima? Senão, o que a busca em profundidade está fazendo de errado?
 
